@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios JavaScript</title>
+  <link rel="stylesheet" href="formulario.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="navbar-title">Formularios en JavaScript</span>
+        <ul>
+          <li><a href="index.html" class="active">Formulario</a></li>
+          <li><a href="val_formas.html">Validación de Formas</a></li>
+          <li><a href="dialog-boxes.html">Cajas de Diálogo</a></li>
+        </ul>
+      </nav>
+    
+      <div class="navbar-line"></div>
+<div class="content">
+  <h1>Formulario 1: Campo de texto</h1>
+  <FORM METHOD="POST" ENCTYPE="TEXT/PLAIN" ACTION="mailto:joseleonardomp12@gmail.com">
+    <INPUT TYPE="TEXT" NAME="APELLIDO" SIZE="10" MAXLENGTH="12">
+  </FORM>
+  
+  <h1>Formulario 2: TextArea</h1>
+  <FORM METHOD="POST" ENCTYPE="TEXT/PLAIN" ACTION="mailto:joseleonardomp12@gmail.com">
+    <TEXTAREA NAME="NOTAS" ROWS="6" COLS="30"></TEXTAREA>
+  </FORM>
+
+  <h1>Formulario 3: Botones de opción (Radio Button)</h1>
+  <FORM METHOD="POST" ENCTYPE="TEXT/PLAIN" ACTION="mailto:joseleonardomp12@gmail.com">
+    <BR>¿Lees el Periódico?
+    <BR>
+    <INPUT TYPE="RADIO" NAME="LEE_EL_PERIODICO" VALUE="SI" CHECKED>SI
+    <BR>
+    <INPUT TYPE="RADIO" NAME="LEE_EL_PERIODICO" VALUE="NO">NO
+    <BR>
+    <INPUT TYPE="RADIO" NAME="LEE_EL_PERIODICO" VALUE="A_VECES">A VECES
+  </FORM>
+
+  <h1>Formulario 4: Casillas de verificación (Checkbox)</h1>
+  <FORM METHOD="POST" ENCTYPE="TEXT/PLAIN" ACTION="mailto:joseleonardomp12@gmail.com">
+    <BR>Inscripción
+    <BR>
+    <INPUT TYPE="CHECKBOX" NAME="Subscribir">Sí deseo inscribirme
+  </FORM>
+
+  <h1>Formulario 5: Menú desplegable</h1>
+  <FORM METHOD="POST" ENCTYPE="TEXT/PLAIN" ACTION="mailto:joseleonardomp12@gmail.com">
+    <BR>¿Cuál buscador te parece mejor?
+    <BR>
+    <SELECT NAME="BUSCADOR">
+      <OPTION>Yahoo</OPTION>
+      <OPTION>Alta Vista</OPTION>
+      <OPTION>Infoseek</OPTION>
+      <OPTION>Lycos</OPTION>
+      <OPTION>Hotbot</OPTION>
+    </SELECT>
+  </FORM>
+
+  <h1>Formulario 6: Menú desplegable con tamaño ajustado</h1>
+  <FORM METHOD="POST" ENCTYPE="TEXT/PLAIN" ACTION="mailto:joseleonardomp12@gmail.com">
+    <BR>¿Cuál buscador te parece mejor?
+    <BR><BR>
+    <SELECT NAME="BUSCADOR" SIZE="3">
+      <OPTION>Yahoo</OPTION>
+      <OPTION>Alta Vista</OPTION>
+      <OPTION>Infoseek</OPTION>
+      <OPTION>Lycos</OPTION>
+      <OPTION>Hotbot</OPTION>
+    </SELECT>
+    <BR><BR>
+    <INPUT TYPE="SUBMIT" VALUE="Enviar Datos">
+    <INPUT TYPE="RESET" VALUE="Borra todo">
+  </FORM>
+
+  <h1>Formulario 7: Formulario completo</h1>
+  <FORM METHOD="POST" ENCTYPE="TEXT/PLAIN" ACTION="mailto:joseleonardomp12@gmail.com">
+    Nombre: 
+    <INPUT TYPE="TEXT" NAME="NOMBRE" SIZE="30" MAXLENGTH="30">
+
+    <BR><BR>¿Lees el Periódico?
+    <BR>
+    <INPUT TYPE="RADIO" NAME="LEE_EL_PERIODICO" VALUE="SI" CHECKED>SI
+    <BR>
+    <INPUT TYPE="RADIO" NAME="LEE_EL_PERIODICO" VALUE="NO">NO
+    <BR>
+    <INPUT TYPE="RADIO" NAME="LEE_EL_PERIODICO" VALUE="A_VECES">A VECES
+
+    <BR><BR>¿Qué periódico lees?
+    <BR>
+    <SELECT NAME="PERIODICO">
+      <OPTION>Norte</OPTION>
+      <OPTION>Excelsior</OPTION>
+      <OPTION>Otro</OPTION>
+    </SELECT>
+
+    <BR><BR>¿Qué tipos de noticias lees?
+    <BR>
+    <INPUT TYPE="CHECKBOX" NAME="INTERNACIONALES">Internacionales
+    <INPUT TYPE="CHECKBOX" NAME="NACIONALES">Nacionales
+    <INPUT TYPE="CHECKBOX" NAME="DEPORTES">Deportes
+    <INPUT TYPE="CHECKBOX" NAME="SOCIALES">Sociales
+
+    <BR><BR>
+    <INPUT TYPE="SUBMIT" VALUE="Enviar Datos">
+    <INPUT TYPE="RESET" VALUE="Borra todo">
+  </FORM>
+</div>
+</body>
+</html>

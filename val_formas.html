@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación de Formas con Javascript</title>
+  <link rel="stylesheet" href="formulario.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <span class="navbar-title">Formularios en JavaScript</span>
+    <ul>
+      <li><a href="index.html">Formulario</a></li>
+      <li><a href="validation.html" class="active">Validación de Formas</a></li>
+      <li><a href="dialog-boxes.html">Cajas de Diálogo</a></li>
+    </ul>
+  </nav>
+
+  <div class="navbar-line"></div>
+
+  <!-- Contenido -->
+  <main>
+    <h1>Sección 1: Declaración de Variables</h1>
+    <p>En Javascript se declara la variable con el siguiente formato:</p>
+    <pre>
+      var NOMBRE = "algún valor";
+    </pre>
+    <p>Las variables son sensibles a caracteres y pueden contener letras, números y guiones bajos (_).</p>
+
+    <h1>Sección 2: Función básica en Javascript</h1>
+    <p>Ejemplo de una función y cómo llamarla desde un botón:</p>
+    <pre>
+      <script type="text/javascript">
+        function MIFUNCION() {
+          alert("¡Esta es una función básica!");
+        }
+      </script>
+      <form>
+        <input type="button" onclick="MIFUNCION();" value="Llamada">
+      </form>
+    </pre>
+
+    <h1>Sección 3: Función para convertir texto a mayúsculas</h1>
+    <script type="text/javascript">
+      function mayus() {
+        document.getElementById('nombre').value = document.getElementById('nombre').value.toUpperCase();
+        alert("Esta es la función toUpperCase");
+      }
+    </script>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" onblur="mayus();">
+    </form>
+
+    <h1>Sección 4: Calcular la edad según el año de nacimiento</h1>
+    <script type="text/javascript">
+      function resta() {
+        var nac = prompt("¿En qué año naciste?", "");
+        var act = 2024;
+        var res = act - nac;
+        alert("Tienes " + res + " años");
+      }
+    </script>
+    <form>
+      <input type="button" value="Edad" onclick="resta();">
+    </form>
+  </main>
+</body>
+</html>
