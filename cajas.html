@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cajas de Diálogo en Javascript</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="navbar-title">Formularios en JavaScript</span>
+    <ul>
+      <li><a href="index.html">Formulario</a></li>
+      <li><a href="val_formas.html">Validación de Formas</a></li>
+      <li><a href="cajas.html" class="active">Cajas de Diálogo</a></li>
+    </ul>
+  </nav>
+  <div class="navbar-line"></div>
+
+  <div class="content">
+    <h1>Sección 1: Caja de Alerta</h1>
+    <p>Ejemplo de una caja de alerta:</p>
+    <script>
+      function mostrarAlerta() {
+        window.alert("¡Alerta! Esta es una alerta");
+      }
+    </script>
+    <button class="simple-button" onclick="mostrarAlerta()">Mostrar Alerta</button>
+
+    <h1>Sección 2: Caja de Confirmación</h1>
+    <p>Ejemplo de una caja de confirmación que regresa un valor:</p>
+    <script>
+      function mostrarConfirmacion() {
+        const confirmar = window.confirm("¿Aceptas que estudias en la UANL?");
+        if (confirmar) {
+          window.alert("Ok");
+        } else {
+          window.alert("No");
+        }
+      }
+    </script>
+    <button class="simple-button" onclick="mostrarConfirmacion()">Mostrar Confirmación</button>
+
+    <h1>Sección 3: Caja de Respuesta</h1>
+    <p>Ejemplo de una caja de respuesta donde el usuario puede ingresar su nombre:</p>
+    <script>
+      function mostrarPrompt() {
+        const respuesta = window.prompt("¿Cuál es tu nombre?");
+        if (respuesta) {
+          window.alert("Hola, " + respuesta + "!");
+        } else {
+          window.alert("No ingresaste un nombre.");
+        }
+      }
+    </script>
+    <button class="simple-button" onclick="mostrarPrompt()">Mostrar Prompt</button>
+
+    <h1>Sección 4: Función para mostrar un Hello World</h1>
+    <p>Ejemplo que muestra un mensaje de "Hello World" al hacer clic en un botón:</p>
+    <script>
+      function helloWorld() {
+        window.alert("Hello World");
+      }
+    </script>
+    <button class="simple-button" onclick="helloWorld()">Mostrar Hello World</button>
+  </div>
+</body>
+</html>

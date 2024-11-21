@@ -1,0 +1,222 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 80px 20px 20px; /* Ajuste en padding-top para evitar superposición */
+  }
+
+h1 {
+    font-size: 2rem;
+    color: #803bec;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+pre {
+    font-size: 1rem;
+    color: #803bec;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #803bec;
+}
+
+form input[type="submit"],
+form input[type="reset"],
+form button {
+    background-color: #803bec;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form button:hover {
+    background-color: #9c4af7;
+    transform: scale(1.05);
+}
+
+form select {
+    appearance: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+form select[size] {
+    height: auto;
+}
+
+form select:focus,
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #803bec;
+    outline: none;
+    box-shadow: 0 0 8px rgba(128, 59, 236, 0.5);
+}
+
+form label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form br {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    form input[type="text"],
+    form textarea,
+    form select {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"],
+    form button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+.action-button {
+    background-color: #803bec;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.action-button:hover {
+    background-color: #9c4af7;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.action-button:active {
+    transform: translateY(2px);
+}
+
+.no-border-form {
+    background-color: transparent; /* Elimina el fondo */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    box-shadow: none; /* Elimina la sombra */
+    border: none; /* Elimina cualquier borde */
+    text-align: center; /* Centra el botón horizontalmente */
+}
+
+.no-border-form .action-button {
+    display: inline-block; /* Asegura que el botón sea un elemento en línea */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #803bec; /* Fondo del botón */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s ease; /* Suaviza el hover */
+}
+
+.no-border-form .action-button:hover {
+    background-color: #9c4af7; /* Cambia el color en hover */
+}
+
+.simple-button {
+    display: block; /* Hace que los botones sean elementos en bloque */
+    margin: 20px auto; /* Centra los botones horizontalmente */
+    background-color: #803bec;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.simple-button:hover {
+    background-color: #9c4af7;
+}
+
+.simple-button:active {
+    background-color: #6a2fc9;
+    transform: scale(0.98);
+}
